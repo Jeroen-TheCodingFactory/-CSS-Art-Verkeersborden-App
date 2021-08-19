@@ -1,0 +1,221 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --je-mag-niet-rood: #C50003;
+    --verkeersbord-blauw: #004896;
+    --voorrang-geel: #ECCC00;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: black;
+    padding: 4rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.card{
+    flex-basis: 30rem;
+    height: 30rem;
+    background:blue;
+    list-style:none;
+    flex-grow:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__figure{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card__figure--je-mag-hier-niet{
+    width: 60%;
+    height:60%;
+    background:white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2.5rem var(--je-mag-niet-rood),
+                0 0 0 3rem white,
+                0 0 0 3.5rem var(--je-mag-niet-rood);
+    position:relative;
+}
+
+.card__figure--stop{
+    background: var(--je-mag-niet-rood);
+}
+
+.card__stop--streep{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:110%;
+    height:20%;
+    background: white;
+    border-radius: 0.5rem / 50%;
+}
+
+.card__heading{
+    font-size: 600%;
+}
+
+.card__figure--parkeerverbod{
+    background: var(--verkeersbord-blauw);
+    box-shadow: 0 0 0 0.5rem white,
+                0 0 0 3rem var(--je-mag-niet-rood),
+                0 0 0 3.5rem white,
+                0 0 0 4rem var(--je-mag-niet-rood);
+}
+
+.card__parkeerverbod-streep{
+    height:98%;
+    width:5%;
+    background: red;
+    box-shadow: 0 0 0 0.5rem white;
+}
+
+.card__parkeerverbod-streep--eerste{
+    transform:rotate(-45deg);
+}
+
+.card__parkeerverbod-streep--tweede{
+    transform:rotate(45deg);
+}
+
+.card__stop--streep-klein{
+    width:65%;
+    background: black;
+    height: 10%;
+    border-radius: 5rem;
+}
+
+.aanhanger{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.aanhanger__bak{
+    width: 50%;
+    height:30%;
+    background:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.aanhanger__wiel{
+    position: absolute;
+    top:65%;
+    left:50%;
+    width:15%;
+    height:15%;
+    background:black;
+    border-radius: 50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 0 0 0.3rem white;
+}
+
+.aanhanger__koppeling{
+    position:absolute;
+    top:62%;
+    left:12%;
+    width: 4rem;
+    height: 0.5rem;
+    background:black;
+}
+
+.card__figure--onverplicht-fietspad{
+    width:70%;
+    height:20%;
+    background:  var(--verkeersbord-blauw);
+    box-shadow: 0 0 0 1rem var(--verkeersbord-blauw); 
+    position:relative;
+}
+
+.card__figure--onverplicht-fietspad::after{
+    content:"";
+    position:absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    border:0.5rem solid white;
+    border-radius:0.5rem;
+}
+
+.card__heading--onverplicht-fietspad{
+    color: white;
+    font-size: 250%;
+    letter-spacing: 0.2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(-5%);
+}
+
+.card__figure--onverplicht-fietspad--einde{
+    overflow: hidden;
+}
+.card__figure--onverplicht-fietspad--einde::before{
+    content:"";
+    position: absolute;
+    transform:rotate(-15deg);
+    top:60%;
+    left:-50%;
+    height:25%;
+    width:160%;
+    background: var(--je-mag-niet-rood);
+    border: 0.3rem solid white;
+    z-index:1;
+}
+
+.card__figure--voorrang{
+    transform: rotate(45deg);
+    width:30%;
+    height:30%;
+    background:var(--voorrang-geel);
+    box-shadow: 0 0 0 0.5rem black, 0 0 0 2rem white, 0 0 0 2.5rem black;
+}
+
+.card__voorrang-einde{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+.card__voorrang-einde-streep{
+    height: 150%;
+    width:4%;
+    background:black;
+    position: absolute;
+    top:-25%;
+    transform: translateX(-50%);
+}
+
+.card__voorrang-einde-streep--eerste{
+    left: 40%;
+}
+
+.card__voorrang-einde-streep--tweede{
+    left: 50%;
+}
+
+.card__voorrang-einde-streep--derde{
+    left:60%;
+}
+.u-flexbox-wrapper{
+    display:flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
