@@ -15,7 +15,7 @@ html{
 
 body{
     font-size: 1.6rem;
-    background: black;
+    background: #F3F1F5;
     padding: 4rem;
     font-family: 'Didact Gothic', sans-serif;
 }
@@ -23,12 +23,38 @@ body{
 .card{
     flex-basis: 30rem;
     height: 30rem;
-    background:blue;
+    background:rgb(243, 241, 245);
     list-style:none;
     flex-grow:0;
     display:flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0.3rem 3rem rgba(0,0,0,0.2);
+    transition: 0.5s all;
+    position:relative;
+    transform-style: preserve-3d;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__informatie{
+    transform: rotateY(-180deg);
+
+}
+
+.card__informatie{
+    height:100%;
+    width:100%;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: 1;
+    padding: 4rem;
+    background: #F3F1F5;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
 .card__figure{
@@ -212,10 +238,83 @@ body{
 .card__voorrang-einde-streep--derde{
     left:60%;
 }
+
+.card__tekst{
+    margin-bottom: 2rem;
+}
 .u-flexbox-wrapper{
     display:flex;
     align-items: center;
     gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
+}
+.a-popup{
+   animation-name: popup;
+   animation-duration: 0.4s;
+   animation-timing-function: ease;
+   animation-fill-mode: backwards;
+}
+
+.a-popup:nth-of-type(1){
+    animation-delay:0.1s;
+}
+.a-popup:nth-of-type(2){
+    animation-delay:0.2s;
+}
+
+.a-popup:nth-of-type(3){
+    animation-delay:0.3s;
+}
+
+.a-popup:nth-of-type(4){
+    animation-delay:0.4s;
+}
+
+.a-popup:nth-of-type(5){
+    animation-delay:0.5s;
+
+}
+
+.a-popup:nth-of-type(6){
+    animation-delay:0.6s;
+
+}
+
+.a-popup:nth-of-type(7){
+    animation-delay:0.7s;
+
+}
+
+.a-popup:nth-of-type(8){
+    animation-delay:0.8s;
+
+}
+
+.a-popup:nth-of-type(9){
+    animation-delay:0.9s;
+
+}
+
+.a-popup:nth-of-type(10){
+    animation-delay:1s;
+
+}
+
+.a-popup:nth-of-type(11){
+    animation-delay:1.1s;
+
+}
+.a-popup:nth-of-type(12){
+    animation-delay:1.2s;
+}
+@keyframes popup {
+    from{
+        opacity:0;
+        transform: scale(0.85);
+    }
+    to{
+        opacity:1;
+        transform: scale(1);
+    }
 }
