@@ -249,6 +249,11 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.u-max-width{
+    max-width: 180rem;
+    margin: 0 auto;
+}
 .a-popup{
    animation-name: popup;
    animation-duration: 0.4s;
