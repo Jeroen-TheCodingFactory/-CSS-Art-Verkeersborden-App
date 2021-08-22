@@ -5,12 +5,13 @@
 }
 
 *:focus{
-    outline: 0.5rem solid var(--verkeersbord-blauw);
+    outline: 0.5rem dashed var(--verkeersbord-blauw);
 }
 
 :root{
     --je-mag-niet-rood: #C50003;
     --verkeersbord-blauw: #004896;
+    --verkeersbord-lichtblauw: #7EA1C6;
     --voorrang-geel: #ECCC00;
 }
 html{
@@ -97,6 +98,25 @@ body{
 
 .card__heading{
     font-size: 600%;
+}
+
+.card__advies-header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.card__advies-heading{
+    font-size:800%;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.card__advies-subheading{
+    color:white;
+    font-size: 300%;
+    transform:translateY(-40%);
+    letter-spacing: 0.2rem;
 }
 
 .card__figure--parkeerverbod{
@@ -249,6 +269,15 @@ body{
 .card__tekst{
     margin-bottom: 2rem;
 }
+
+.card__figure--advies{
+    width:60%;
+    height:60%;
+    background: var(--verkeersbord-blauw);
+    box-shadow: 0 0 0 0.5rem white, 0 0 0 1.5rem var(--verkeersbord-blauw);
+    border-radius: 0.5rem;
+}
+
 .u-flexbox-wrapper{
     display:flex;
     align-items: center;
@@ -320,6 +349,11 @@ body{
 .a-popup:nth-of-type(12){
     animation-delay:1.2s;
 }
+
+.a-popup:nth-of-type(12){
+    animation-delay:1.3s;
+}
+
 @keyframes popup {
     from{
         opacity:0;
