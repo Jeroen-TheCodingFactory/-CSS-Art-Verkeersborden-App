@@ -13,3 +13,4 @@ Dingen die ik heb geleerd:
 6) 5) had "logischer" gerealiseerd kunnen worden door de voorkant op de achterkant te laten liggen en het kaartje in zijn geheel om te laten draaien.
 7) Opnieuw gezien hoe ongeloofelijk makkelijk het is om met flexbox een responsive layout te maken.
 8) Geleerd dat wanneer je een groot scherm hebt (mijne is zo'n 3400px breed) is het belangrijk max-width op een wrapper toe te voegen. 
+9) Hoe tabindex gebruikt kan worden en waarom groter dan 0 niet wenselijk is (omdat je de natuurlijke order van html breekt). 
