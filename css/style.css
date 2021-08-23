@@ -38,6 +38,7 @@ body{
     transition: 0.5s transform;
     position:relative;
     transform-style: preserve-3d;
+    margin-bottom: 4rem;
 }
 
 .card:hover, .card:focus{
@@ -281,11 +282,19 @@ body{
 .u-flexbox-wrapper{
     display:flex;
     align-items: center;
-    gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+@supports (gap: 4rem){
+    .card{ 
+        margin-bottom:0;
+    }
+
+    .u-flexbox-wrapper{
+        gap: 4rem;
+    }
+}
 .u-max-width{
     max-width: 180rem;
     margin: 0 auto;
