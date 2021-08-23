@@ -281,7 +281,7 @@ body{
 
 .card__figure--pas-op{
     width: 85%;
-    height:75%;
+    height:70%;
     background: var(--je-mag-niet-rood);
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     position:relative;
@@ -317,6 +317,20 @@ body{
     position:absolute;
     top:57%;
     left:30%;
+}
+
+.card__pasOpArrowBlok--links{
+    width: 20%;
+}
+
+.card__pasOpArrowBlok--rechts{
+    width: 20%;
+    left:auto;
+    right:30%;
+}
+
+.card__figure--voorrangsweg{
+    transform: rotate(0.5turn);
 }
 .u-flexbox-wrapper{
     display:flex;
@@ -398,9 +412,22 @@ body{
     animation-delay:1.2s;
 }
 
-.a-popup:nth-of-type(12){
+.a-popup:nth-of-type(13){
     animation-delay:1.3s;
 }
+
+.a-popup:nth-of-type(14){
+    animation-delay:1.4s;
+}
+
+.a-popup:nth-of-type(15){
+    animation-delay:1.5s;
+} 
+
+.a-popup:nth-of-type(16){
+    animation-delay:1.6s;
+} 
+
 
 @keyframes popup {
     from{
