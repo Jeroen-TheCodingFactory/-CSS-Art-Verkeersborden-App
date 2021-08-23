@@ -279,6 +279,45 @@ body{
     border-radius: 0.5rem;
 }
 
+.card__figure--pas-op{
+    width: 85%;
+    height:75%;
+    background: var(--je-mag-niet-rood);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    position:relative;
+}
+
+
+.card__pasOpInner{
+    position:absolute;
+    width:60%;
+    height:60%;
+    background:white;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    top:27%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.card__pasOpArrow{
+    position:absolute;
+    height:65%;
+    width:15%;
+    background: black;
+    left:50%;
+    transform:translateX(-50%);
+    top: 25%;
+    clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 50% 90%, 0% 100%);
+}
+
+.card__pasOpArrowBlok{
+    height: 6%;
+    width: 40%;
+    background:black;
+    position:absolute;
+    top:57%;
+    left:30%;
+}
 .u-flexbox-wrapper{
     display:flex;
     align-items: center;
