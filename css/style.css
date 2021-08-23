@@ -90,7 +90,7 @@ body{
 .card__stop--streep{
     position:absolute;
     top:50%;
-    transform:translateY(-50%) translateZ(1px);
+    transform:translateY(-50%);
     width:110%;
     height:20%;
     background: white;
@@ -116,7 +116,7 @@ body{
 .card__advies-subheading{
     color:white;
     font-size: 300%;
-    transform:translateY(-40%) translateZ(1px);
+    transform:translateY(-40%);
     letter-spacing: 0.2rem;
 }
 
@@ -136,11 +136,11 @@ body{
 }
 
 .card__parkeerverbod-streep--eerste{
-    transform:rotate(-45deg)  translateZ(1px);
+    transform:rotate(-45deg);
 }
 
 .card__parkeerverbod-streep--tweede{
-    transform:rotate(45deg)  translateZ(1px);
+    transform:rotate(45deg);
 }
 
 .card__stop--streep-klein{
@@ -163,7 +163,7 @@ body{
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%)  translateZ(1px);
+    transform:translate(-50%,-50%);
 }
 
 .aanhanger__wiel{
@@ -213,7 +213,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    transform:translateY(-5%)  translateZ(1px);
+    transform:translateY(-5%);
 }
 
 .card__figure--onverplicht-fietspad--einde{
@@ -222,7 +222,7 @@ body{
 .card__figure--onverplicht-fietspad--einde::before{
     content:"";
     position: absolute;
-    transform:rotate(-15deg)  translateZ(1px);
+    transform:rotate(-15deg);
     top:60%;
     left:-50%;
     height:25%;
@@ -233,7 +233,7 @@ body{
 }
 
 .card__figure--voorrang{
-    transform: rotate(45deg)  translateZ(1px);
+    transform: rotate(45deg);
     width:30%;
     height:30%;
     background:var(--voorrang-geel);
@@ -252,7 +252,7 @@ body{
     background:black;
     position: absolute;
     top:-25%;
-    transform: translateX(-50%)  translateZ(1px);
+    transform: translateX(-50%);
 }
 
 .card__voorrang-einde-streep--eerste{
