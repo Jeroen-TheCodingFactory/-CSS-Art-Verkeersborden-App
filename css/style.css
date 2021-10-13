@@ -446,7 +446,7 @@ body{
 
 @media screen and (max-width:31.25rem) {
     .card{
-        transform: perspective(100rem) var(--scale-mobile);
+        transform: var(--scale-mobile);
     }
     /* remove animation */
     .a-popup{
