@@ -9,10 +9,13 @@
 }
 
 :root{
+    /* colors */
     --je-mag-niet-rood: #C50003;
     --verkeersbord-blauw: #004896;
     --verkeersbord-lichtblauw: #7EA1C6;
     --voorrang-geel: #ECCC00;
+    /* transforms */
+    --scale-mobile: scale(0.95);
 }
 html{
     font-size: 62.5%;
@@ -26,12 +29,13 @@ body{
 }
 
 .card{
+    display:flex;
     flex-basis: 30rem;
+    flex-grow:0;
+    flex-shrink: 0;
     height: 30rem;
     background:rgb(243, 241, 245);
     list-style:none;
-    flex-grow:0;
-    display:flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.3rem 3rem rgba(0,0,0,0.2);
@@ -42,12 +46,11 @@ body{
 }
 
 .card:hover, .card:focus{
-    transform: rotateY(180deg) translateZ(1px);
+    transform: perspective(100rem) rotateY(180deg) translateZ(1px);
 }
 
 .card:hover .card__informatie, .card:focus .card__informatie{
-    transform: rotateY(-180deg) translateZ(1px);
-
+    transform: perspective(100rem)  rotateY(-180deg) translateZ(1px);
 }
 
 .card__informatie{
@@ -437,5 +440,15 @@ body{
     to{
         opacity:1;
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width:43.75rem) {
+    .card{
+        transform: var(--scale-mobile);
+    }
+    /* remove animation */
+    .a-popup{
+        animation-name:none;
     }
 }
