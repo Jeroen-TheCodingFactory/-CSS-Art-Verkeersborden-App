@@ -43,15 +43,15 @@ body{
     position:relative;
     transform-style: preserve-3d;
     margin-bottom: 4rem;
+    
 }
 
 .card:hover, .card:focus{
-    transform: rotateY(180deg) translateZ(1px);
+    transform: perspective(100rem) rotateY(180deg) translateZ(1px);
 }
 
 .card:hover .card__informatie, .card:focus .card__informatie{
-    transform: rotateY(-180deg) translateZ(1px);
-
+    transform: perspective(100rem)  rotateY(-180deg) translateZ(1px);
 }
 
 .card__informatie{
@@ -446,15 +446,7 @@ body{
 
 @media screen and (max-width:31.25rem) {
     .card{
-        transform: var(--scale-mobile);
-    }
-
-    .card:hover, .card:focus{
-        transform: rotateY(180deg) translateZ(1px)  var(--scale-mobile);
-    }
-    
-    .card:hover .card__informatie, .card:focus .card__informatie{
-        transform: rotateY(-180deg) translateZ(1px)  var(--scale-mobile);
+        transform: perspective(100rem) var(--scale-mobile);
     }
     /* remove animation */
     .a-popup{
