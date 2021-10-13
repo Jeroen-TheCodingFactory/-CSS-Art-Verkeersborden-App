@@ -43,7 +43,6 @@ body{
     position:relative;
     transform-style: preserve-3d;
     margin-bottom: 4rem;
-    
 }
 
 .card:hover, .card:focus{
@@ -444,7 +443,7 @@ body{
     }
 }
 
-@media screen and (max-width:31.25rem) {
+@media screen and (max-width:43.75rem) {
     .card{
         transform: var(--scale-mobile);
     }
