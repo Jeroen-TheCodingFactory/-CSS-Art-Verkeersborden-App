@@ -286,6 +286,7 @@ body{
     width: 85%;
     height:70%;
     background: var(--je-mag-niet-rood);
+    -webkit-clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     position:relative;
 }
@@ -296,6 +297,7 @@ body{
     width:60%;
     height:60%;
     background:white;
+    -webkit-clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     top:27%;
     left:50%;
@@ -310,6 +312,7 @@ body{
     left:50%;
     transform:translateX(-50%);
     top: 25%;
+    -webkit-clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 50% 90%, 0% 100%);
     clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 50% 90%, 0% 100%);
 }
 
