@@ -1,5 +1,5 @@
 # Verkeersborden-App
-[![Het gerealiseerde eindproduct op desktop](https://vettedingenbouwen.nl/img/verkeersborden.png)](https://vettedingenbouwen.nl/video/verkeersborden/promo.mp4) 
+[![Het gerealiseerde eindproduct op desktop](https://verkeersborden.css-art.nl/img/verkeersborden.png)](https://verkeersborden.css-art.nl/video/promo.mp4) 
 <i>Klik op de video hierboven voor een demo!</i>
 
 Een deel van deze app is gemaakt voor de IT-Proeverij van 21-September-2021 voor Code Café. Deze app biedt een informatieve manier om verkeersborden te leren. Ook heb ik aan deze app gewerkt in mijn eigen tijd. De versie die tijdens de demo is gemaakt is eigendom van code-café. 
@@ -41,13 +41,13 @@ https://www.youtube.com/watch?v=qmFKxBbZzzU
 Hieronder zijn een aantal screenshots toegevoegd van de app op verschillende devices.
 
 ### Desktop Screenshot
-![Het gerealiseerde eindproduct op desktop, 4 kaartjes naast elkaar](https://vettedingenbouwen.nl/img/verkeersborden.png "Verkeersborden-App")
+![Het gerealiseerde eindproduct op desktop, 4 kaartjes naast elkaar](https://verkeersborden.css-art.nl/img/verkeersborden.png "Verkeersborden-App")
 
 ### Mobile Screenshot
-![Het gerealiseerde eindproduct op mobiel, 2 kaartjes naast elkaar](https://vettedingenbouwen.nl/img/verkeersborden_mobile.png "Verkeersborden-App")
+![Het gerealiseerde eindproduct op mobiel, 2 kaartjes naast elkaar](https://verkeersborden.css-art.nl/img/verkeersborden_mobile.png "Verkeersborden-App")
 
 ## Live demo
-https://vettedingenbouwen.nl/verkeersborden
+https://verkeersborden.css-art.nl
 
 ## Resources
 1. Resource gebruikt voor het leren van het verschil tussen auto-fit en auto-fill. https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
